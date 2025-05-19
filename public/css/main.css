@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&family=Poppins:wght@400;500&display=swap');
+
+/* Gunakan Poppins untuk teks umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #212529;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8fcff;
+}
+
+.main-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../background.png'); /* Ganti dengan nama gambar */
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran layar */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Menambahkan efek parallax */
+    opacity: 0.6; /* Mengatur transparansi hanya pada gambar latar */
+    z-index: -1; /* Memastikan gambar berada di bawah konten */
+}
+
+/* Gunakan Montserrat untuk judul dan elemen penting */
+h1, h2, h3, h4, h5, h6,
+.navbar, .navbar-brand, .navbar-nav .nav-link,
+.card-title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+}
+
+/* Optional: style tambahan untuk tampilan heading */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+.navbar {
+    position: relative;
+    margin-right: 75px;
+    margin-left: 75px;
+    z-index: 10; /* Menjaga navbar tetap di atas gambar latar belakang */
+}
+
+.tc-light {
+    color: #f1eae2;
+}
+
+.tc-primary {
+    color : #21414f !important;
+}
+
+.tc-secondary {
+    color : #a6c1cd;
+}
+
+
+.bg-primary {
+    background-color : #21414f !important;
+    color: #f1eae2 !important;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.btn-custom-outline-primary {
+    border-color: #21414f;
+    color: #21414f;
+    background-color: white;
+}
+
+.btn-custom-outline-primary:hover {
+    background-color: #21414f;
+    color: white;
+}
+
+.btn-custom-primary {
+    background: #21414f;
+    color: #fff;
+}
+
+.btn-custom-primary:hover {
+    background : #fff;
+    color: #21414f;
+    border-color: #21414f;
+}
+
+.accordion-header,
+.accordion-body {
+    background-color: transparent !important;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  background:  #21414f;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+
+hr.light-hr {
+    border: none;
+    height: 4px;
+    background:  #21414f;
+    border-radius: 1px;
+    opacity: 1;
+  }
+
+.card {
+    border: 2px solid #0C3190; /* warna abu Bootstrap */
+    border-radius: 0.5rem;
+}
+
+.card:hover {
+    border-color: #0d6efd; /* biru Bootstrap */
+    box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+    transition: all 0.3s ease;
+}
+
+.img-max-250 {
+    max-height: 250px;
+    height: auto;
+}
+
+.container-bg {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px; /* Menghindari overlap dengan navbar */
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+.ls-4 {
+    letter-spacing: 4px;
+}
+
+.w-400 {
+    font-weight: 400;
+}
+
+.border-custom {
+    border: 3px solid #a6c1cd !important;
+}
+
+.icon-image-title {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-image-title-big {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-image {
+    width: 16px;
+    height: 16px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #21414f;
+    color: white;
+}
+
+.nav-tabs .nav-link.active small {
+    color: #fff; /* Change the color of the <small> text inside the active tab */
+}
+
+.nav-tabs .nav-link {
+    color: #21414f;
+    border: none;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #21414f;
+    color: white;
+    border: none;
+}
+
+.nav-tabs .nav-link:hover small {
+    color: #fff; /* Optional: Change the color of <small> text when hovered */
+}
+
+.nav-tabs {
+    width: 100%;
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+}
+
+.nav-tabs .nav-link {
+    display: block;
+    width: 100%;  /* Ensure the link takes up the full width of the parent */
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for better visual appearance */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color on hover */
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #21414f; /* Change the background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #21414f; /* Active tab background color */
+    color: white; /* Active tab text color */
+}
+
+.nav-tabs .nav-link small {
+    color: inherit; /* Make the text color inherit from the parent element */
+}
+
+.custom-header th {
+    background-color: #21414f; /* Light gray example */
+}
